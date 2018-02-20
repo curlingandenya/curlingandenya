@@ -10,14 +10,11 @@ function videoSize() {
 		});
 	};
 }
-
+function isMobile() {
+	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
 $(window).on('load resize',function(){
-  if(navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
-	 
-  } else {
-	  videoSize(); 
-  }
-  if (navigator.userAgent.match(/like Mac OS X/i)) {
-      alert('Hi, you\'re browsing from an iOS device.');
-  }
+	if (!isMobile()) {
+	  	videoSize(); 
+	}
 });
