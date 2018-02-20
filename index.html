@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta http-equiv="Pragma" content="no-cache">
 	<title>Curling &amp; Enya</title>
 	<style type="text/css">
 		@supports not (-webkit-overflow-scrolling: touch) {
@@ -72,6 +73,7 @@
 		    width: 854,               // Player width (in px)
 		    height: 480,              // Player height (in px)
 		    playerVars: {
+			  start: 285,
 		      autoplay: 1,        // Auto-play the video on load
 		      controls: 1,        // Show pause/play buttons in player
 		      showinfo: 0,        // Hide the video title
@@ -81,7 +83,6 @@
 		      cc_load_policy: 0, // Hide closed captions
 		      iv_load_policy: 3,  // Hide the Video Annotations
 		      autohide: 0,         // Hide video controls when playing
-		      start: 509,
 		      playsinline: 1
 		    },
 		    events: {
@@ -92,6 +93,5 @@
 		  });
 		 } 
 		</script>
-		<!--<iframe width="854" height="480" src="https://www.youtube.com/embed/3aB9pICUJYw?start=509&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
 	</div>
 </body>
