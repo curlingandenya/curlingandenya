@@ -12,5 +12,7 @@ function videoSize() {
 }
 
 $(window).on('load resize',function(){
-  videoSize();
+  if(!navigator.userAgent.match(/(iPhone|iPod|iPad)/i)) {
+	videoSize();  
+  }
 });
