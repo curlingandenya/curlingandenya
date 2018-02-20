@@ -17,4 +17,7 @@ $(window).on('load resize',function(){
   } else {
 	  videoSize(); 
   }
+  if (navigator.userAgent.match(/like Mac OS X/i)) {
+      alert('Hi, you\'re browsing from an iOS device.');
+  }
 });
