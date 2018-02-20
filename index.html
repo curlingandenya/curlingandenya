@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!--<meta http-equiv="Pragma" content="no-cache">-->
 	<title>Curling &amp; Enya</title>
 	<style type="text/css">
 		@supports not (-webkit-overflow-scrolling: touch) {
@@ -26,67 +27,11 @@
 		div.wrapper {
 			text-align: center
 		}
-		iframe {
-			display: inline
-		}
 	</style>
 </head>
 <body class="color-normal">
 	<div class="wrapper">
 		<h1>Curling &amp; Enya</h1>
-		<p class="ios-only">
-			On iOS tap each video twice, then hit the<br/>full screen button on the curling video.
-		</p>
-		<div id="youTubeVideoPlayer1"></div>
-		<div id="youTubeVideoPlayer2"></div>
-		<script async src="https://www.youtube.com/iframe_api"></script>
-		<script>
-		 function onYouTubeIframeAPIReady() {
-		  var player1;
-		  player1 = new YT.Player('youTubeVideoPlayer1', {
-		    videoId: 't94UwKrDyW4', // YouTube Video ID
-		    width: 854,               // Player width (in px)
-		    height: 480,              // Player height (in px)
-		    playerVars: {
-		      autoplay: 1,        // Auto-play the video on load
-		      controls: 1,        // Show pause/play buttons in player
-		      showinfo: 0,        // Hide the video title
-		      modestbranding: 1,  // Hide the Youtube Logo
-		      loop: 1,            // Run the video in a loop
-		      fs: 0,              // Hide the full screen button
-		      cc_load_policy: 0, // Hide closed captions
-		      iv_load_policy: 3,  // Hide the Video Annotations
-		      autohide: 0,         // Hide video controls when playing
-		      start: 138,
-		      playsinline: 1
-		    },
-		    events: {
-		      onReady: function(e) {
-		        e.target.mute();
-		      }
-		    }
-		  });
-		 var player2;
-		  player2 = new YT.Player('youTubeVideoPlayer2', {
-		    videoId: '3aB9pICUJYw', // YouTube Video ID
-		    width: 854,               // Player width (in px)
-		    height: 480,              // Player height (in px)
-		    playerVars: {
-		      autoplay: 1,        // Auto-play the video on load
-		      controls: 1,        // Show pause/play buttons in player
-		      showinfo: 0,        // Hide the video title
-		      modestbranding: 1,  // Hide the Youtube Logo
-		      loop: 1,            // Run the video in a loop
-		      fs: 0,              // Hide the full screen button
-		      cc_load_policy: 0, // Hide closed captions
-		      iv_load_policy: 3,  // Hide the Video Annotations
-		      autohide: 0,         // Hide video controls when playing
-		      start: 509,
-		      playsinline: 1
-		    },
-		  });
-		 } 
-		</script>
-		<!--<iframe width="854" height="480" src="https://www.youtube.com/embed/3aB9pICUJYw?start=509&autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+		<iframe src="https://player.vimeo.com/video/256596708?autoplay=1&loop=1&autopause=0" width="854" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 	</div>
 </body>
